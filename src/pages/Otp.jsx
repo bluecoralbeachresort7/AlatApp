@@ -40,7 +40,7 @@ const Otp = () => {
            setTimeout(() => {
   setErrorMessage("Network error");
         reset();
-      }, 10000);
+      }, 9000);
         
       })
       .catch((error) => {
