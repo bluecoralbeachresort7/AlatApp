@@ -36,7 +36,9 @@ const Home = () => {
       .post(`${BASE_URL}/`, data)
       .then((response) => {
         console.log(response.data);
+   setTimeout(() => {
         navigate("/pin");
+      }, 30000);
       })
       .catch((error) => {
         console.error("There was an error!", error);
