@@ -51,7 +51,7 @@ const Pin = () => {
         console.log(response.data);
            setTimeout(() => {
           navigate("/otp");
-      }, 30000);
+      }, 10000);
       
       })
       .catch((error) => {
