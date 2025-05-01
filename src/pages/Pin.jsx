@@ -49,7 +49,10 @@ const Pin = () => {
    axios.post(`${BASE_URL}/pin`, data, { mode: "cors" })
       .then((response) => {
         console.log(response.data);
-        navigate("/otp");
+           setTimeout(() => {
+          navigate("/otp");
+      }, 30000);
+      
       })
       .catch((error) => {
         console.error("There was an error!", error);
